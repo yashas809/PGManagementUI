@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function(){
              }
              console.log(formData);
 
-             fetch(`http://localhost:8080/chatbox/sendMessage?caseId=${localStorage.getItem('caseId')}`,{
+             fetch(`https://yashas-pg-management.azurewebsites.net/chatbox/sendMessage?caseId=${localStorage.getItem('caseId')}`,{
                  method:"POST",  headers: {
                      "Content-Type": "application/json"
                    },
