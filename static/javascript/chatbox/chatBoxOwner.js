@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
  function getConversation(caseId)
  {
-     fetch(`http://localhost:8080/chatbox/getConversation?caseId=${caseId}`,{
+     fetch(`https://yashas-pg-management.azurewebsites.net/chatbox/getConversation?caseId=${caseId}`,{
          method:"GET",
      }).then(response => {
          return response.json();
